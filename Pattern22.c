@@ -18,7 +18,16 @@ Input-6, Output-6
 void Display(int iRows,int iCols)
 {
     int i,j=0;
-
+    
+    if(iRow < 0)
+    {
+       iRow=-iRow;
+    }
+    if(iCol < 0)
+    {
+       iCol=-iCol;
+    }
+    
     for(i=1;i<=iRows;i++)
     {
         for(j=1;j<=i;j++)
