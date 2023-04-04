@@ -15,6 +15,23 @@ void Pattern(int iRow,int iCol)
     int i=0,j=0;
     char ch='A';
     char ch1='A';
+       
+    if(iRow < 0)
+    {
+       iRow=-iRow;
+    }
+    if(iCol < 0)
+    {
+       iCol=-iCol;
+    }
+    if(iRow==4)
+    {
+       iRow=3;
+    }
+    if(iCol==4)
+    {
+       iCol=5;
+    }
 
    for(i=1,ch1='A';i<=iRow;i++,ch1++)
    {
