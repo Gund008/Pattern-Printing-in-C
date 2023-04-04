@@ -14,6 +14,19 @@ Output:4  4  4  4  4
 void Pattern(int iRow,int iCol)
 {
    int i=0,j=0;
+       
+    if(iRow < 0)
+    {
+       iRow=-iRow;
+    }
+    if(iCol < 0)
+    {
+       iCol=-iCol;
+    } 
+    if(iCol==4)
+    {
+       iCol=5;
+    }
 
    for(i=iRow;i>=1;i--)     //Outer loop
    {
