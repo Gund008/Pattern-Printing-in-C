@@ -14,8 +14,25 @@ Output : 1  2  3  4  5
 
 void display(int iRow,int iCol)
 {
-    int i=0,j=0;
-
+   int i=0,j=0;
+         
+  if(iRow < 0)
+  {
+     iRow=-iRow;
+  }
+  if(iCol < 0)
+  {
+     iCol=-iCol;
+  }
+  if(iRow==4)
+  {
+     iRow=5;
+  }
+  if(iCol==4)
+  {
+     iCol=5;
+  }
+         
     for(i=1;i<=iRow;i++)
     {
         for(j=1;j<=iCol;j++)
