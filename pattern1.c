@@ -8,6 +8,16 @@ write a program in c which Accept the value from user and Display below pattern
 void Display(int irow,int icol)
 {
     int i=0,j=0;
+    
+    if(iRow < 0)
+    {
+        iRow=-iRow;
+    }
+    if(iCol < 0)
+    {
+       iCol=-iCol;
+    }
+    
     for(i=irow;i>0;i--)
     {
             for(j=0;j<i;j++)
