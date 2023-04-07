@@ -10,6 +10,16 @@ $ * * *
 void Display(int irow,int icol)
 {
     int i=0,j=0;
+    
+    if(iRow < 0)
+    {
+        iRow=-iRow;
+    }
+    if(iCol < 0)
+    {
+       iCol=-iCol;
+    }
+    
     for(i=0;i<irow;i++)
     {  
         for(j=0;j<icol;j++)
