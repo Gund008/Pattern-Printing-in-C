@@ -15,6 +15,15 @@ Output:  1   2   3   4   5
 void Pattern(int iRow,int iCol)
 {
     int i=0,j=0;
+       
+     if(iRow < 0)
+    {
+        iRow=-iRow;
+    }
+    if(iCol < 0)
+    {
+       iCol=-iCol;
+    } 
     
    for(i=1;i<=iRow;i++)     //Outer loop
    {
